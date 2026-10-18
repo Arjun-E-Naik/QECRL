@@ -1,0 +1,44 @@
+{
+  "3": {
+    "num_detectors": 24,
+    "num_edges": 48,
+    "t_fe_us": 43.21050000044124,
+    "t_ema_us": 10.923500000217246,
+    "t_nnls_us": 20.254999999451684,
+    "t_bandit_us": 546.441499999446,
+    "t_proj_us": 7.3269999995773105,
+    "t_pure_algo_us": 628.1574999991335,
+    "t_py_reconstruct_ms": 0.0758900000050744,
+    "t_buffer_swap_us": 0.3285000002506422,
+    "inner_shot_us": 0.33,
+    "inner_round_us": 0.11
+  },
+  "5": {
+    "num_detectors": 120,
+    "num_edges": 147,
+    "t_fe_us": 295.56950000028337,
+    "t_ema_us": 42.607000000316475,
+    "t_nnls_us": 333.4304999998494,
+    "t_bandit_us": 105384.64999999973,
+    "t_proj_us": 31.52649999947244,
+    "t_pure_algo_us": 106087.78349999966,
+    "t_py_reconstruct_ms": 0.9141899999917769,
+    "t_buffer_swap_us": 0.7180000000062137,
+    "inner_shot_us": 1.15,
+    "inner_round_us": 0.22999999999999998
+  },
+  "7": {
+    "num_detectors": 336,
+    "num_edges": 298,
+    "t_fe_us": 498.3890000005431,
+    "t_ema_us": 43.330999999398045,
+    "t_nnls_us": 1724.9580000009246,
+    "t_bandit_us": 1806473.8484999998,
+    "t_proj_us": 48.29150000091431,
+    "t_pure_algo_us": 1808788.8180000016,
+    "t_py_reconstruct_ms": 2.3218649999989793,
+    "t_buffer_swap_us": 0.8880000007138733,
+    "inner_shot_us": 2.45,
+    "inner_round_us": 0.35000000000000003
+  }
+}

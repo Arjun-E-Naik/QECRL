@@ -1,0 +1,155 @@
+[
+  {
+    "distance": 3,
+    "model": "Static-MWPM",
+    "mean_ler": 0.01265,
+    "std_ler": 0.0084,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 0.33,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 3,
+    "model": "Spitz-Corr-MWPM",
+    "mean_ler": 0.03373,
+    "std_ler": 0.0172,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 0.63,
+    "outer_latency_us_window": 1675.0
+  },
+  {
+    "distance": 3,
+    "model": "EMA-Heuristic-MWPM",
+    "mean_ler": 0.01555,
+    "std_ler": 0.01037,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 0.35,
+    "outer_latency_us_window": 718.8
+  },
+  {
+    "distance": 3,
+    "model": "Pure-RL-Shot (MLP)",
+    "mean_ler": 0.1619,
+    "std_ler": 0.045,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 0.24,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 3,
+    "model": "RL-MWPM (Proxy Reward)",
+    "mean_ler": 0.01193,
+    "std_ler": 0.00792,
+    "eta_adapt_percent": 12.8,
+    "inner_latency_us_shot": 0.33,
+    "outer_latency_us_window": 979.2
+  },
+  {
+    "distance": 3,
+    "model": "RL-MWPM (Ours, Full)",
+    "mean_ler": 0.01274,
+    "std_ler": 0.00886,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 0.34,
+    "outer_latency_us_window": 979.2
+  },
+  {
+    "distance": 3,
+    "model": "Oracle-MWPM",
+    "mean_ler": 0.00709,
+    "std_ler": 0.00451,
+    "eta_adapt_percent": 100.0,
+    "inner_latency_us_shot": 0.32,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 5,
+    "model": "Static-MWPM",
+    "mean_ler": 0.00268,
+    "std_ler": 0.00119,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 1.12,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 5,
+    "model": "Spitz-Corr-MWPM",
+    "mean_ler": 0.00512,
+    "std_ler": 0.0022,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 3.06,
+    "outer_latency_us_window": 2410.0
+  },
+  {
+    "distance": 5,
+    "model": "EMA-Heuristic-MWPM",
+    "mean_ler": 0.00274,
+    "std_ler": 0.0013,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 1.79,
+    "outer_latency_us_window": 1920.0
+  },
+  {
+    "distance": 5,
+    "model": "RL-MWPM (Proxy Reward)",
+    "mean_ler": 0.00108,
+    "std_ler": 0.00062,
+    "eta_adapt_percent": 95.4,
+    "inner_latency_us_shot": 1.15,
+    "outer_latency_us_window": 10125.0
+  },
+  {
+    "distance": 5,
+    "model": "RL-MWPM (Ours, Full)",
+    "mean_ler": 0.00115,
+    "std_ler": 0.00068,
+    "eta_adapt_percent": 91.6,
+    "inner_latency_us_shot": 1.16,
+    "outer_latency_us_window": 10125.0
+  },
+  {
+    "distance": 5,
+    "model": "Oracle-MWPM",
+    "mean_ler": 0.00101,
+    "std_ler": 0.00053,
+    "eta_adapt_percent": 100.0,
+    "inner_latency_us_shot": 1.13,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 7,
+    "model": "Static-MWPM",
+    "mean_ler": 0.00038,
+    "std_ler": 0.00029,
+    "eta_adapt_percent": 0.0,
+    "inner_latency_us_shot": 2.13,
+    "outer_latency_us_window": 0.0
+  },
+  {
+    "distance": 7,
+    "model": "RL-MWPM (Proxy Reward)",
+    "mean_ler": 0.00022,
+    "std_ler": 0.00027,
+    "eta_adapt_percent": 100.0,
+    "inner_latency_us_shot": 2.45,
+    "outer_latency_us_window": 139556.0
+  },
+  {
+    "distance": 7,
+    "model": "RL-MWPM (Ours, Full)",
+    "mean_ler": 0.00025,
+    "std_ler": 0.00029,
+    "eta_adapt_percent": 86.8,
+    "inner_latency_us_shot": 2.59,
+    "outer_latency_us_window": 139556.0
+  },
+  {
+    "distance": 7,
+    "model": "Oracle-MWPM",
+    "mean_ler": 0.00023,
+    "std_ler": 0.00027,
+    "eta_adapt_percent": 100.0,
+    "inner_latency_us_shot": 2.43,
+    "outer_latency_us_window": 0.0
+  }
+]

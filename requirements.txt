@@ -1,0 +1,13 @@
+# Core Scientific & Quantum Error Correction
+numpy>=1.24.0
+scipy>=1.10.0
+stim>=1.14.0
+pymatching>=2.2.0
+matplotlib>=3.7.0
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Reinforcement Learning & Machine Learning
+gymnasium>=0.29.0
+stable-baselines3>=2.0.0
+torch>=2.0.0

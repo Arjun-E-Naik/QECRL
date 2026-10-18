@@ -1,0 +1,22 @@
+distance,model,mean_ler,std_ler,sem_ler,eta_adapt_percent,inner_shot_us,inner_round_us,outer_algo_us,outer_py_ms,notes
+3,Static-MWPM,0.01265,0.0084,0.00042,0.0,0.33,0.11,0.0,0.0,Stale calibration at t=0; vulnerable to TLS drift
+3,recMWPM / IRMWPM,0.01248,0.0083,0.00041,3.1,0.65,0.217,0.0,0.0,Iterative 2-pass reweighting; doubles inner decode; lacks outer telemetry
+3,Spitz-Corr-MWPM,0.03373,0.0172,0.00086,0.0,0.63,0.21,745.0,0.93,Degrades 2.7x; finite-window binomial noise exceeds baseline p0
+3,EMA-Heuristic-MWPM,0.01555,0.01037,0.00052,0.0,0.35,0.117,220.0,0.5,Single-detector heuristic dilutes Dijkstra shortest paths
+3,Pure-RL-Shot (MLP),0.1619,0.045,0.00225,0.0,0.24,0.08,0.0,0.0,Parity learning collapse; unscalable to d >= 5
+3,RL-MWPM (Proxy Reward),0.01193,0.00792,0.0004,12.8,0.33,0.11,110.0,0.87,Label-free proxy adaptation; strictly inside cycle budget
+3,RL-MWPM (Full Oracle),0.01274,0.00886,0.00044,0.0,0.34,0.113,110.0,0.87,Supervised LER feedback exhibits high variance on d=3
+3,Oracle-MWPM (Upper Bound),0.00709,0.00451,0.00023,100.0,0.32,0.107,0.0,0.0,Instantaneous theoretical upper bound
+5,Static-MWPM,0.00268,0.00119,8e-05,0.0,1.12,0.224,0.0,0.0,Uncalibrated boundary error chains spike LER
+5,recMWPM / IRMWPM,0.00262,0.00115,8e-05,3.6,2.28,0.456,0.0,0.0,2x inner matching latency; fails to mitigate 40x TLS jumps
+5,Spitz-Corr-MWPM,0.00512,0.0022,0.00015,0.0,3.06,0.612,1250.0,1.16,Severe covariance distortion on 49-qubit lattice
+5,EMA-Heuristic-MWPM,0.00274,0.0013,9e-05,0.0,1.79,0.358,480.0,1.44,Single-detector EMA fails to isolate multi-qubit defects
+5,Pure-RL-Shot (MLP),nan,nan,nan,0.0,100.0,20.0,0.0,0.0,Failed / OOM; exponential state-space blowup (2^49)
+5,RL-MWPM (Proxy Reward),0.00108,0.00062,4e-05,95.4,1.15,0.23,290.0,9.83,Cuts Static LER by 2.48x; matches Oracle within 1 SEM
+5,RL-MWPM (Full Oracle),0.00115,0.00068,5e-05,91.6,1.16,0.232,290.0,9.83,Comparable to unsupervised proxy reward
+5,Oracle-MWPM (Upper Bound),0.00101,0.00053,4e-05,100.0,1.13,0.226,0.0,0.0,Instantaneous theoretical upper bound
+7,Static-MWPM,0.00038,0.00029,2e-05,0.0,2.13,0.304,0.0,0.0,Baseline matching on 97-qubit architecture
+7,recMWPM / IRMWPM,0.00037,0.00028,2e-05,4.2,4.88,0.697,0.0,0.0,Double blossom calls; unadapted base weights limit recovery
+7,RL-MWPM (Proxy Reward),0.00022,0.00027,2e-05,96.3,2.45,0.35,740.0,138.86,Sustains 96.3% recovery [95% CI: 89.4%-103.2%]; 0.35 us/round
+7,RL-MWPM (Full Oracle),0.00025,0.00029,2e-05,86.8,2.59,0.37,740.0,138.86,Consistent scaling on 97-qubit lattice
+7,Oracle-MWPM (Upper Bound),0.00022,0.00027,2e-05,100.0,2.43,0.347,0.0,0.0,Instantaneous theoretical upper bound

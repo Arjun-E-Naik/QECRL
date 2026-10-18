@@ -1,0 +1,29 @@
+{
+  "distances": [
+    3,
+    5
+  ],
+  "num_windows": 50,
+  "shots_per_window": 2000,
+  "regime": "tls",
+  "p0": 0.001,
+  "metrics": {
+    "d=3": {
+      "mean_static_ler": 0.01532,
+      "mean_oracle_ler": 0.011619999999999998,
+      "overall_ler_gap": 0.003700000000000002,
+      "peak_static_to_oracle_ratio": 5.75
+    },
+    "d=5": {
+      "mean_static_ler": 0.0018800000000000004,
+      "mean_oracle_ler": 0.0005,
+      "overall_ler_gap": 0.0013800000000000004,
+      "peak_static_to_oracle_ratio": 350.0
+    },
+    "lambda_suppression": {
+      "lambda_static_mean": 70.10474603174603,
+      "lambda_oracle_mean": 465.7016666666666,
+      "interpretation": "Lambda > 1 means increasing distance suppresses error (below threshold)"
+    }
+  }
+}

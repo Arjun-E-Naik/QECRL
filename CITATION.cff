@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or manuscript in your research, please cite it as below."
+title: "Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding"
+authors:
+  - family-names: "Naik"
+    given-names: "Arjun E."
+    email: "arjunenaik2007@gmail.com"
+year: 2026
+url: "https://github.com/Arjun-E-Naik/QECRL"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Naik"
+      given-names: "Arjun E."
+  title: "Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding"
+  journal: "arXiv preprint"
+  year: 2026

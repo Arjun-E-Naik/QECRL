@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.directory
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Scratch & Temporary Exploration
+scratch/
+tmp/
+*.tmp
+
+# LaTeX Compilation Artifacts (Paper directory)
+# Keep .tex, .bib, .pdf, and figures intact!
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.nav
+paper/*.snm
+paper/*.vrb
+paper/*.run.xml
+paper/*-blx.bib
+
+# Keep essential artifacts
+!paper/manuscript.tex
+!paper/manuscript.pdf
+!paper/figures/**
+!results/models/linucb.npz

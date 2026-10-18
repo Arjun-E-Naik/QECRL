@@ -1,0 +1,9 @@
+{
+  "distance": 5,
+  "num_windows": 40,
+  "shots_per_window": 250,
+  "mean_static_ler": 0.0036500000000000005,
+  "mean_rl_ler": 0.00299,
+  "mean_oracle_ler": 0.00219,
+  "adaptation_recovery_pct": 45.20547945205482
+}

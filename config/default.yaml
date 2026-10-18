@@ -1,0 +1,55 @@
+# Default configuration for QECRL experiments
+
+# ── Surface code parameters ──────────────────────────────────────────────────
+code:
+  type: "surface"           # Options: "surface", "repetition", "color"
+  distance: 3               # Code distance d (logical error rate ~ p^((d+1)/2))
+  rounds: 5                 # Number of syndrome measurement rounds per episode
+
+# ── Noise model ──────────────────────────────────────────────────────────────
+noise:
+  model: "depolarizing"     # Options: "depolarizing", "biased", "circuit_level"
+  base_rate: 0.005          # Physical error probability per gate (0.5%)
+  # Drift settings (makes noise non-stationary — the key research challenge)
+  drift:
+    enabled: true
+    type: "gaussian_walk"   # Options: "gaussian_walk", "sudden_jump", "periodic"
+    drift_strength: 0.001   # Std of noise drift per step
+    drift_period: 500       # Steps between drift events (for periodic)
+    min_rate: 0.001
+    max_rate: 0.020         # Stay below ~1% threshold for d=3
+
+# ── RL Agent ──────────────────────────────────────────────────────────────────
+agent:
+  algorithm: "PPO"          # Options: "PPO", "SAC", "DQN"
+  policy: "MlpPolicy"       # Network architecture
+  learning_rate: 3.0e-4
+  n_steps: 2048             # Steps per rollout (PPO)
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99               # Discount factor
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01            # Entropy coefficient (encourages exploration)
+  # Neural network architecture
+  net_arch: [256, 256, 128] # Hidden layer sizes
+
+# ── Training ──────────────────────────────────────────────────────────────────
+training:
+  total_timesteps: 1_000_000
+  eval_freq: 10_000         # Evaluate every N steps
+  n_eval_episodes: 500      # Episodes for evaluation
+  save_freq: 50_000
+  log_dir: "./results/logs"
+  model_dir: "./results/models"
+  seed: 42
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+evaluation:
+  n_episodes: 2000          # For final logical error rate estimation
+  baselines:
+    - "mwpm"                # Always compare against MWPM
+    - "random"              # Sanity check
+  # Code distances to sweep for threshold analysis
+  distance_sweep: [3, 5, 7]
+  error_rate_sweep: [0.001, 0.003, 0.005, 0.007, 0.010, 0.015]

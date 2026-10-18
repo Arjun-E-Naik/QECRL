@@ -1,0 +1,20 @@
+# Auto detect text files and perform LF normalization on checkin
+* text=auto
+
+# Python and LaTeX files
+*.py text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.npz binary
+*.pyc binary
