@@ -249,11 +249,19 @@ If you use this codebase or paper in your research, please cite:
 ```bibtex
 @article{naik2026adaptive,
   title   = {Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding},
-  author  = {Naik, Arjun E.},
+  author  = {Naik, Arjun E},
   journal = {arXiv preprint},
   year    = {2026}
 }
 ```
+
+---
+
+## Author & Contact
+
+**Arjun E Naik**  
+Indian Institute of Information Technology, Nagpur  
+Email: [`bt24csd005@iiitn.ac.in`](mailto:bt24csd005@iiitn.ac.in)
 
 ---
 

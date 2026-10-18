@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding"
 readme = "README.md"
 authors = [
-    { name = "Arjun E. Naik", email = "arjunenaik2007@gmail.com" }
+    { name = "Arjun E Naik", email = "bt24csd005@iiitn.ac.in" }
 ]
 license = { text = "MIT" }
 classifiers = [

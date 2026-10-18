@@ -3,15 +3,18 @@ message: "If you use this software or manuscript in your research, please cite i
 title: "Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding"
 authors:
   - family-names: "Naik"
-    given-names: "Arjun E."
-    email: "arjunenaik2007@gmail.com"
+    given-names: "Arjun E"
+    email: "bt24csd005@iiitn.ac.in"
+    affiliation: "Indian Institute of Information Technology, Nagpur"
 year: 2026
 url: "https://github.com/Arjun-E-Naik/QECRL"
 preferred-citation:
   type: article
   authors:
     - family-names: "Naik"
-      given-names: "Arjun E."
+      given-names: "Arjun E"
+      email: "bt24csd005@iiitn.ac.in"
+      affiliation: "Indian Institute of Information Technology, Nagpur"
   title: "Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding"
   journal: "arXiv preprint"
   year: 2026
