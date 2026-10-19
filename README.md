@@ -242,20 +242,7 @@ pdflatex manuscript.tex
 
 ---
 
-## Citation
 
-If you use this codebase or paper in your research, please cite:
-
-```bibtex
-@article{naik2026adaptive,
-  title   = {Adaptive Reinforcement Learning-Guided Detector Error Model Reweighting for Real-Time Non-Stationary Surface Code Decoding},
-  author  = {Naik, Arjun E},
-  journal = {arXiv preprint},
-  year    = {2026}
-}
-```
-
----
 
 ## Author & Contact
 
